@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Home</title>
+    </head>
+    <body>
+
+        <div class="blurred hidden" id="blurred"></div>
+        <div class="main">
+      
+        <div class="navbar">
+          <ul>
+          <div class="nav_bar_items">
+          <div id="main_menu">
+            <li><a href="/">Home</a></li>
+              <li><a href="/new-record">Add new record</a></li>
+          </div>
+          </div>
+      </ul> 
+      </div>
+
+      <div><h2>Showing <span id="totalRecordsShowingTop">0</span> records of <span id="totalRecordsTop">0</span></h2></div>
+      
+        <!-- display results -->
+          <div class="dv_columns">
+              <div class="content">
+                <div id="display_results"> </div>
+              </div>
+          </div>
+
+          <div><h2>Showing <span id="totalRecordsShowingBottom">0</span> records of <span id="totalRecordsBottom">0</span></h2></div>
+     </div>
+
+     
+
+   <script type="text/javascript" src="js/main.js"></script>
+<script>
+    getAllResults();
+</script>
+</body>
+</html>

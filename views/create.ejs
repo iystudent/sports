@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Create new record</title>
+    </head>
+    <body>
+        <div class="blurred hidden" id="blurred"></div>
+        <div class="main">
+      
+        <div class="navbar">
+          <ul>
+          <div class="nav_bar_items">
+          <div id="main_menu">
+            <li><a href="/">Home</a></li>
+          </div>
+          </div>
+      </ul> 
+      </div>
+              <!-- display results -->
+              <div class="dv_columns">
+                <div class="content">
+                  <div id="display_results"> </div>
+                </div>
+            </div>
+            
+              <!-- form -->
+              <div class="section" >
+                <form  id="add_new_record">
+                    <label for="new_record"><strong> Add a new record </strong></label><br>
+                    <span class="error" id="formError"></span>
+                    <input type="datetime-local" name="date" id="date" required>
+                    <input type="text" name="home_team" id="home_team" placeholder="Home Team" required>
+                    <input type="text" name="away_team" id="away_team" placeholder="Away Team" required>
+                    <input type="number" name="home_score" id="home_score" placeholder="Home Score" min="0" required>
+                    <input type="number" name="away_score" id="away_score" placeholder="Away Score" min="0" required>
+                    <input type="text" name="tournament" id="tournament" placeholder="Tournament" required>
+                    <input type="text" name="city" id="city" placeholder="City" required>
+                    <input type="text" name="country" id="country" placeholder="Country" required>
+                    <p>Please Neutrality:</p>
+                    <input type="radio" id="neutral1" name="neutral" value="true">
+                    <label for="neutral1" style="cursor: pointer;">Is Neutral : True</label><br><br>
+                    <input type="radio" id="neutral2" name="neutral" value="false">
+                    <label for="neutral2" style="cursor: pointer;">Is Neutral : False</label><br>  
+
+                    <button type="button" id="addRecord" class="submit">Create Record</button>
+                </form>
+            </div>
+   <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
