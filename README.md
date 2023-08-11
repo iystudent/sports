@@ -11,3 +11,19 @@ How to run this application locally
 - Open chrome and visit http://localhost:3000
 
 How to run this application in production
+- For production first signup with mongo atlas
+- Create user name and password
+- Choose a free account 
+- Create database called 'sports' with collection results
+- On connect to database choose connect with mongodb
+- Copy connection string and paste it as server url in config/setting.js
+- Replace password with the password created above
+- Go to render.com and create an account
+- Connect with your github repository
+- On deployment enter name of the site
+- Run time choose node
+- Build command enter 'npm install' to install all depencies listed in package.json file
+- Start command enter 'node index.js'
+- Instance type choose free
+- Then click on Create Web service
+- Click at your web url at the top after creating web service to access your website
